@@ -29,6 +29,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -78,11 +79,11 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(12, 249)
+        Me.TextBox3.Location = New System.Drawing.Point(12, 349)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(627, 123)
+        Me.TextBox3.Size = New System.Drawing.Size(627, 23)
         Me.TextBox3.TabIndex = 5
         '
         'RichTextBox1
@@ -93,11 +94,20 @@ Partial Class Form1
         Me.RichTextBox1.TabIndex = 7
         Me.RichTextBox1.Text = ""
         '
+        'RichTextBox3
+        '
+        Me.RichTextBox3.Location = New System.Drawing.Point(12, 249)
+        Me.RichTextBox3.Name = "RichTextBox3"
+        Me.RichTextBox3.Size = New System.Drawing.Size(627, 94)
+        Me.RichTextBox3.TabIndex = 8
+        Me.RichTextBox3.Text = ""
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(651, 384)
+        Me.Controls.Add(Me.RichTextBox3)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox3)
@@ -118,5 +128,6 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents RichTextBox3 As System.Windows.Forms.RichTextBox
 
 End Class
